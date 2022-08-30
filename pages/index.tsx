@@ -25,7 +25,7 @@ export default function Home({ blog }: Props): JSX.Element {
       {/* <Header /> */}
       <div className="text-white racking-widest space-y-10 p-14">
         <h1 className="text-7xl">Welcome to</h1>
-        <h1 className="text-7xl">Hariken++'s Portfolio!</h1>
+        <h1 className="text-7xl">Hariken++ Portfolio!</h1>
         <p>右下のハンバーガーメニューから各項目をご覧いただけます</p>
       </div>
       <div className="flex justify-center mx-40 h-96">
