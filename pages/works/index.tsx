@@ -1,14 +1,7 @@
-import { Divider, Paper, Stack } from "@mui/material";
+import { Paper} from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import Menu from "../../components/Menu";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Worksheet from "../../components/Worksheet";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -21,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function index() {
   return (
-    <div className="bg-gradient-to-r from-green-400 to-blue-500 h-full min-h-screen text-center">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen text-center">
       <p className="text-white text-7xl tracking-widest py-12 p-1 place-items-center">
         Works
       </p>

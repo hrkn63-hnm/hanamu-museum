@@ -1,7 +1,6 @@
 import { Paper, Stack } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import Menu from "../../components/Menu";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -15,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function index() {
   return (
     <div>
-      <div className="bg-gradient-to-r from-sky-500 to-indigo-500 h-screen text-center">
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen text-center">
         <p className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Contact
         </p>
@@ -23,13 +22,17 @@ function index() {
           <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
             <Item>
               <a
-                href="https://twitter.com/hrkn63_hnm" className="hover:text-sky-700">
-                Twitter
+                href="https://twitter.com/hrkn63_hnm"
+                className="hover:text-sky-700"
+              >
+                Twitter(プログラミング用)
               </a>
             </Item>
             <Item>
               <a
-                href="https://github.com/hrkn63-hnm" className="hover:text-sky-700">
+                href="https://github.com/hrkn63-hnm"
+                className="hover:text-sky-700"
+              >
                 GitHub
               </a>
             </Item>

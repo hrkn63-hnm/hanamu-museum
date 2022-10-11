@@ -1,10 +1,6 @@
-import styles from "../styles/Home.module.css";
 import { client } from "../libs/client";
 import type { Blog } from "../types/blog";
-import Link from "next/link";
-import Header from "../components/Header";
 import Menu from "../components/Menu";
-import Carousel from "../components/Carousel";
 
 type Props = {
   blog: Array<Blog>;
@@ -25,7 +21,7 @@ export default function Home({ blog }: Props): JSX.Element {
       {/* <Header /> */}
       <div className="text-white racking-widest space-y-10 p-14">
         <h1 className="text-7xl">Welcome to</h1>
-        <h1 className="text-7xl">Hariken++ Portfolio!</h1>
+        <h1 className="text-7xl">Hanamu++ Portfolio!</h1>
         <p>右下のハンバーガーメニューから各項目をご覧いただけます</p>
       </div>
       <div className="flex justify-center mx-40 h-96">
