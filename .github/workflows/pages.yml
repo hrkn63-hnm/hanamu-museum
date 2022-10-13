@@ -7,6 +7,15 @@ on:
     - main
 
 jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          echo "ths is env=$ENV_1"
+        env: 
+          ENV_1: NEXT_PUBLIC_API_KEY
+
   build-deploy:
     # ubuntu OS を仮想マシン上に用意する
     runs-on: ubuntu-18.04
