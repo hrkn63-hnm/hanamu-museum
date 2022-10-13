@@ -49,7 +49,7 @@ export default function Blog({ blog }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetServerSideProps = async (ctx) => {
   const id = ctx.params?.id;
   const idExceptArray = id instanceof Array ? id[0] : id;
   const data = await client.get({

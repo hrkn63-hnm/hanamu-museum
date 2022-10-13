@@ -18,7 +18,7 @@ type Props = {
   blog: Array<Blog>;
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
   return {
     props: {
