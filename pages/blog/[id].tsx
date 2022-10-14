@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import type { Blog } from "../../types/blog";
 import { client } from "../../libs/client";
 import Menu from "../../components/Menu";
@@ -49,7 +49,7 @@ export default function Blog({ blog }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async (ctx) => {
   const id = ctx.params?.id;
   const idExceptArray = id instanceof Array ? id[0] : id;
   const data = await client.get({
