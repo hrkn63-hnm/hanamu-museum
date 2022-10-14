@@ -49,13 +49,33 @@ export default function Blog({ blog }: Props) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-  const id = ctx.params?.id;
-  const idExceptArray = id instanceof Array ? id[0] : id;
-  const data = await client.get({
-    endpoint: "blog",
-    contentId: idExceptArray,
-  });
+// export const getStaticProps: GetStaticProps = async (ctx) => {
+//   const id = ctx.params?.id;
+//   const idExceptArray = id instanceof Array ? id[0] : id;
+//   const data = await client.get({
+//     endpoint: "blog",
+//     contentId: idExceptArray,
+//   });
+
+//   return {
+//     props: {
+//       blog: data,
+//     },
+//   };
+// };
+
+// 静的生成のためのパスを指定します
+export const getStaticPaths = async () => {
+  const data = await client.get({ endpoint: "blog" });
+
+  const paths = data.contents.map((content: { id: any; }) => `/blog/${content.id}`);
+  return { paths, fallback: false };
+};
+
+// データをテンプレートに受け渡す部分の処理を記述します
+export const getStaticProps = async (context: { params: { id: any; }; }) => {
+  const id = context.params.id;
+  const data = await client.get({ endpoint: "blog", contentId: id });
 
   return {
     props: {
