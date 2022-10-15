@@ -39,11 +39,11 @@ function index() {
                   <a className="hover:text-sky-700 ">Zenn</a>
                 </Link>
               </Item>
-              <Item>
+              {/* <Item>
                 <Link href={""} passHref>
                   <a className="hover:text-sky-700 ">Youtube</a>
                 </Link>
-              </Item>
+              </Item> */}
               <Item>
                 <Link href={""} passHref>
                   <a className="hover:text-sky-700 ">Gmail</a>
