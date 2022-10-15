@@ -31,14 +31,14 @@ export default function Home({ blog }: Props): JSX.Element {
   return (
     <>
       {/* <Header /> */}
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen text-center	">
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen text-center bg-cover bg-center">
         <h1 className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Blog
         </h1>
-        <div className="w-96 mx-auto">
+        <div className="max-w-lg place-items-center justify-items-center gap-3 mx-auto">
           {blog?.map((blog) => (
             <div
-              className="transition delay-150 duration-300 ease-in-out my-6"
+              className="transition delay-150 duration-300 ease-in-out my-6 mx-6"
               key={blog.id}
             >
               <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>

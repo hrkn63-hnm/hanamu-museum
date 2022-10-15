@@ -1,6 +1,7 @@
 import { client } from "../libs/client";
 import type { Blog } from "../types/blog";
 import Menu from "../components/Menu";
+import MyCard from "../components/MyCard";
 
 type Props = {
   blog: Array<Blog>;
@@ -17,19 +18,21 @@ export const getStaticProps = async () => {
 
 export default function Home({ blog }: Props): JSX.Element {
   return (
-    <div className="body-font bg-gradient-to-r from-cyan-500 to-blue-500 h-screen sm:h-screen">
-      {/* <Header /> */}
-      <div className="text-white racking-widest space-y-10 p-14">
-        <h1 className="text-7xl">Welcome to</h1>
-        <h1 className="text-7xl">Hanamu++ Portfolio!</h1>
-        <p>右下のハンバーガーメニューから各項目をご覧いただけます</p>
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen text-center">
+      <p className="text-white text-4xl tracking-widest pt-12 pb-3 p-1 place-items-center">
+        Welcome to
+      </p>
+      <p className="text-white text-4xl tracking-widest pt-3 pb-12 p-1 place-items-center">
+        Hanamu++ Museum!
+      </p>
+      <div className="grid justify-items-center gap-3">
+        <MyCard
+          img="https://media.discordapp.net/attachments/757627473427955867/1030661015744040960/IMG_8422.jpg?width=775&height=1045"
+          title="はなむ"
+          text="よく食べよく寝る高校生"
+        />
       </div>
-      <div className="flex justify-center mx-40 h-96">
-        {/* <div className=""> */}
-          {/* <Carousel /> */}
-        {/* </div> */}
-      </div>
-      <div className="float-right place-items-end">
+      <div className="sticky bottom-0">
         <Menu />
       </div>
     </div>

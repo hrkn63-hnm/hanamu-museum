@@ -18,7 +18,7 @@ function index() {
         <p className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Contact
         </p>
-        <div className="w-96 mx-auto">
+        <div className="max-w-lg place-items-center justify-items-center gap-3 mx-auto">
           <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
             <Item>
               <a

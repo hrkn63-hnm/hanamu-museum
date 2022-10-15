@@ -14,7 +14,6 @@ const actions = [
   { icon: <TextsmsIcon />, name: "Contact", link: "contact" },
   { icon: <BookIcon />, name: "Blog", link: "blog" },
   { icon: <WorkIcon />, name: "Works", link: "works" },
-  { icon: <AccountCircleIcon />, name: "About", link: "about" },
   { icon: <Home />, name: "Home", link: "" },
 ];
 
