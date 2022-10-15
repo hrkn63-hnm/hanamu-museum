@@ -2,6 +2,7 @@ import { Paper, Stack } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "../../components/Menu";
+import Link from "next/link";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -13,45 +14,47 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function index() {
   return (
-    <div>
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen text-center">
-        <p className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
+    <>
+      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen text-center bg-cover bg-center">
+        <h1 className="text-white text-6xl tracking-widest py-12 p-1 place-items-start">
           Contact
-        </p>
+        </h1>
         <div className="max-w-lg place-items-center justify-items-center gap-3 mx-auto">
-          <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
-            <Item>
-              <a
-                href="https://twitter.com/hrkn63_hnm"
-                className="hover:text-sky-700"
-              >
-                Twitter(プログラミング用)
-              </a>
-            </Item>
-            <Item>
-              <a
-                href="https://github.com/hrkn63-hnm"
-                className="hover:text-sky-700"
-              >
-                GitHub
-              </a>
-            </Item>
-            <Item>
-              <a href="https://zenn.dev/hariken" className="hover:text-sky-700">
-                Zenn
-              </a>
-            </Item>
-            <Item>
-              <a>Youtube</a>
-            </Item>
-            <Item>Gmail:demo43160@gmail.com</Item>
-          </Stack>
+          <div className="transition delay-150 duration-300 ease-in-out my-6 mx-6">
+            <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
+              <Item>
+                <Link href="https://twitter.com/hrkn63_hnm" passHref>
+                  <a className="hover:text-sky-700 ">
+                    Twitter(プログラミング用)
+                  </a>
+                </Link>
+              </Item>
+              <Item>
+                <Link href="https://github.com/hrkn63-hnm" passHref>
+                  <a className="hover:text-sky-700 ">Gituhub</a>
+                </Link>
+              </Item>
+              <Item>
+                <Link href="https://zenn.dev/hariken" passHref>
+                  <a className="hover:text-sky-700 ">Zenn</a>
+                </Link>
+              </Item>
+              <Item>
+                <Link href={""} passHref>
+                  <a className="hover:text-sky-700 ">Youtube</a>
+                </Link>
+              </Item>
+              <Item>
+                <Link href={""} passHref>
+                  <a className="hover:text-sky-700 ">Gmail</a>
+                </Link>
+              </Item>
+            </Stack>
+          </div>
         </div>
-        <div className="float-right place-items-end">
-          <Menu />
-        </div>
+        <Menu />
       </div>
-    </div>
+    </>
   );
 }
 
