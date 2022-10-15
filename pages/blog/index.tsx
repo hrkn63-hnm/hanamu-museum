@@ -5,6 +5,7 @@ import { Paper, Stack } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "../../components/Menu";
+import Head from "next/head";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -30,6 +31,9 @@ export const getStaticProps = async () => {
 export default function Home({ blog }: Props): JSX.Element {
   return (
     <>
+    <Head>
+      <title>Hanamu++ Museum/Blog</title>
+    </Head>
       {/* <Header /> */}
       <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen text-center bg-cover bg-center">
         <h1 className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">

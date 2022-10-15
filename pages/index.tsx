@@ -2,6 +2,7 @@ import { client } from "../libs/client";
 import type { Blog } from "../types/blog";
 import Menu from "../components/Menu";
 import MyCard from "../components/MyCard";
+import Head from "next/head";
 
 type Props = {
   blog: Array<Blog>;
@@ -18,6 +19,10 @@ export const getStaticProps = async () => {
 
 export default function Home({ blog }: Props): JSX.Element {
   return (
+    <>
+    <Head>
+      <title>Hanamu++ Museum</title>
+    </Head>
     <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen text-center">
       <p className="text-white text-4xl tracking-widest pt-12 pb-3 p-1 place-items-center">
         Welcome to
@@ -36,5 +41,6 @@ export default function Home({ blog }: Props): JSX.Element {
         <Menu />
       </div>
     </div>
+    </>
   );
 }

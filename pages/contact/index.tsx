@@ -3,6 +3,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "../../components/Menu";
 import Link from "next/link";
+import Head from "next/head";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -15,6 +16,9 @@ const Item = styled(Paper)(({ theme }) => ({
 function index() {
   return (
     <>
+    <Head>
+      <title>Hanamu++ Museum/Contact</title>
+    </Head>
       <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen text-center bg-cover bg-center">
         <h1 className="text-white text-6xl tracking-widest py-12 p-1 place-items-start">
           Contact
@@ -31,7 +35,7 @@ function index() {
               </Item>
               <Item>
                 <Link href="https://github.com/hrkn63-hnm" passHref>
-                  <a className="hover:text-sky-700 ">Gituhub</a>
+                  <a className="hover:text-sky-700 ">Github</a>
                 </Link>
               </Item>
               <Item>
