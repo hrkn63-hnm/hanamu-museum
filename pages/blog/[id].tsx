@@ -36,7 +36,7 @@ export default function Blog({ blog }: Props) {
               {/* / {updateTime} */}
             </p>
             <div
-              className="text-lg text-blue-900 mt-4 rounded "
+              className="sm:text-sm md:text-md lg:text-lg xl:text-xl text-blue-900 mt-4 rounded "
               dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
             ></div>
           </div>
