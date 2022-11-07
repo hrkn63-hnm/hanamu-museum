@@ -6,6 +6,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "../../components/Menu";
 import Head from "next/head";
+import { Search } from "../../components/Search";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -39,6 +40,9 @@ export default function Home({ blog }: Props): JSX.Element {
         <h1 className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Blog
         </h1>
+        <div>
+          <Search />
+        </div>
         <div className="max-w-lg place-items-center justify-items-center gap-3 mx-auto">
           {blog?.map((blog) => (
             <div
