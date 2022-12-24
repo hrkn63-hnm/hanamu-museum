@@ -19,7 +19,7 @@ export default function Blog({ blog }: Props) {
       <Head>
         <title>Hanamu++ Museum/Blog/{blog.title}</title>
       </Head>
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500  flex flex-col space-y-1 h-full">
+      <div className="text-left">
         <div className="px-10 py-6 mx-auto">
           <div className="max-w-6xl px-10 py-6 mx-auto bg-gray-50">
             <img
@@ -27,7 +27,7 @@ export default function Blog({ blog }: Props) {
               src={blog.eye_catch?.url}
             />
             <div className="mt-2">
-              <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-blue-500">
+              <div className="text-right sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-indigo-600">
                 {blog.title}
               </div>
             </div>
@@ -38,13 +38,13 @@ export default function Blog({ blog }: Props) {
                 </div>
               </div>
             )}
-            <div className="mt-2">
-              <p>
+            <div className="mt-2 ">
+              <p className="text-right">
                 更新日：{updateDay}
                 {/* / {updateTime} */}
               </p>
               <div
-                className="sm:text-sm md:text-md lg:text-lg xl:text-xl text-blue-900 mt-4 rounded "
+                className="mt-6 sm:text-sm md:text-md lg:text-lg xl:text-xl text-blue-900 mt-4 rounded "
                 dangerouslySetInnerHTML={{ __html: `${blog.body}` }}
               ></div>
             </div>

@@ -23,7 +23,7 @@ export default function Home({ blog }: Props): JSX.Element {
     <Head>
       <title>Hanamu++ Museum</title>
     </Head>
-    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen text-center">
+    <div className="">
       <p className="text-white text-4xl tracking-widest pt-12 pb-3 p-1 place-items-center">
         Welcome to
       </p>

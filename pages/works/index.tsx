@@ -19,11 +19,11 @@ function index() {
       <Head>
         <title>Hanamu++ Museum/Works</title>
       </Head>
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen text-center">
+      <div className="">
         <p className="text-white text-7xl tracking-widest py-12 p-1 place-items-center">
           Works
         </p>
-        <div className="grid justify-items-center gap-3">
+        <div className="grid justify-items-center gap-3 px-2">
           <Worksheet
             img="https://cdn.discordapp.com/attachments/757627473427955867/987342630377623592/IMG_7819.jpg"
             title="匿名掲示板"

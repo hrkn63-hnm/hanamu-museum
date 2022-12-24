@@ -29,7 +29,7 @@ function MyCard(props: {
 }) {
   return (
     <div>
-      <div className="">
+      <div className=" hover:animate-spin ">
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia component="img" height="140" image={props.img} />
           <CardContent>

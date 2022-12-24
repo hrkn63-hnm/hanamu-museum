@@ -16,44 +16,35 @@ const Item = styled(Paper)(({ theme }) => ({
 function index() {
   return (
     <>
-    <Head>
-      <title>Hanamu++ Museum/Contact</title>
-    </Head>
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen text-center bg-cover bg-center">
+      <Head>
+        <title>Hanamu++ Museum/Contact</title>
+      </Head>
+      <div className="">
         <h1 className="text-white text-6xl tracking-widest py-12 p-1 place-items-start">
           Contact
         </h1>
-        <div className="max-w-lg place-items-center justify-items-center gap-3 mx-auto">
-          <div className="transition delay-150 duration-300 ease-in-out my-6 mx-6">
-            <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
-              <Item>
-                <Link href="https://twitter.com/hrkn63_hnm" passHref>
-                  <a className="hover:text-sky-700 ">
-                    Twitter(プログラミング用)
-                  </a>
-                </Link>
-              </Item>
-              <Item>
-                <Link href="https://github.com/hrkn63-hnm" passHref>
-                  <a className="hover:text-sky-700 ">Github</a>
-                </Link>
-              </Item>
-              <Item>
-                <Link href="https://zenn.dev/hariken" passHref>
-                  <a className="hover:text-sky-700 ">Zenn</a>
-                </Link>
-              </Item>
-              {/* <Item>
-                <Link href={""} passHref>
-                  <a className="hover:text-sky-700 ">Youtube</a>
-                </Link>
-              </Item> */}
-              <Item>
-                <Link href={""} passHref>
-                  <a className="hover:text-sky-700 ">Gmail</a>
-                </Link>
-              </Item>
-            </Stack>
+        <div className="max-w-lg place-items-center justify-items-center gap-4  mx-auto">
+          <div>
+            <Link href="https://twitter.com/hrkn63_hnm" passHref>
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+                Twitter
+              </div>
+            </Link>
+            <Link href="https://github.com/hrkn63-hnm" passHref>
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+                GitHub
+              </div>
+            </Link>
+            <Link href="https://zenn.dev/hariken" passHref>
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+                Zenn
+              </div>
+            </Link>
+            <Link href={""} passHref>
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+                Gmail
+              </div>
+            </Link>
           </div>
         </div>
         <Menu />

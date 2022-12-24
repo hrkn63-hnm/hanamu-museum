@@ -25,7 +25,16 @@ export default function BasicSpeedDial() {
       >
         <SpeedDial
           ariaLabel="SpeedDial basic example"
-          sx={{ position: "absolute", bottom: 16, right: 16 }}
+          sx={{
+            position: "absolute",
+            bottom: 16,
+            right: 16,
+            "& .MuiFab-primary": {
+              "&:hover": { backgroundColor: "rgb(79 70 229)" },
+            },
+            "& .MuiSpeedDialIcon-icon": { fontSize: 30 },
+            // "&:hover": { backgroundColor: "yellow" },
+          }}
           icon={<MenuIcon />}
         >
           {actions.map((action) => (
@@ -33,6 +42,7 @@ export default function BasicSpeedDial() {
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}
+              sx={{ width: 50, height: 50, backgroundColor: "lightblue" }}
               onClick={() => router.push("/" + action.link)}
             />
           ))}

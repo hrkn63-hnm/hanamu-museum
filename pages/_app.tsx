@@ -16,9 +16,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head> */}
       {/* <Header /> */}
-      {/* <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-full min-h-screen "> */}
+      <div className="bg-indigo-400 min-h-screen w-screen text-center bg-cover bg-center">
         <Component {...pageProps} />
-      {/* </div> */}
+      </div>
     </>
   );
 }
