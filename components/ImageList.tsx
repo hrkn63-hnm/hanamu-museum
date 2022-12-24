@@ -12,7 +12,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
   };
 }
 
-export default function QuiltedImageList(props) {
+export default function QuiltedImageList() {
   const itemData = [
     {
       img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",

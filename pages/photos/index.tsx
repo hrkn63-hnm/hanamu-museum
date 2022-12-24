@@ -6,7 +6,6 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Menu from "../../components/Menu";
 import Head from "next/head";
-import { Search } from "../../components/Search";
 import ImageList from '../../components/ImageList'
 
 const Item = styled(Paper)(({ theme }) => ({
