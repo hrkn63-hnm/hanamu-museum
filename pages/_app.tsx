@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import "swiper/css/bundle";
 import Head from "next/head";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
+
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
