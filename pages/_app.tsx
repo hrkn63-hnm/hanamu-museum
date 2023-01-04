@@ -11,14 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap"
-          rel="stylesheet"
-        />
-      </Head> */}
-      {/* <Header /> */}
-      <div className="bg-indigo-400 min-h-screen w-screen text-center bg-cover bg-center">
+      <div className="bg-indigo-400 min-h-screen w-screen text-center bg-cover bg-center font-maru pb-6">
         <Component {...pageProps} />
       </div>
     </>

@@ -11,8 +11,8 @@ type Props = {
 };
 
 export default function Blog({ blog }: Props) {
-  const updateDay = blog.updatedAt.slice(0, 10);
-  const updateTime = blog.updatedAt.slice(11, 19);
+  const updateDay = new Date(blog.updatedAt).toLocaleDateString();
+  const publishDay = new Date(blog.publishedAt).toLocaleDateString();
 
   return (
     <>
@@ -40,8 +40,10 @@ export default function Blog({ blog }: Props) {
             )}
             <div className="mt-2 ">
               <p className="text-right">
-                更新日：{updateDay}
-                {/* / {updateTime} */}
+                公開日:{publishDay}
+              </p>
+              <p className="text-right">
+                最終更新日:{updateDay}
               </p>
               <div
                 className="mt-6 sm:text-sm md:text-md lg:text-lg xl:text-xl text-blue-900 rounded "

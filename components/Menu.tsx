@@ -19,7 +19,7 @@ const actions = [
 
 export default function BasicSpeedDial() {
   return (
-    <div className=" p-3 m-4">
+    <div className="">
       <Box
       // sx={{ height: 640, transform: "translateZ(0px)", flexGrow: 1 }}
       >
@@ -30,7 +30,7 @@ export default function BasicSpeedDial() {
             bottom: 16,
             right: 16,
             "& .MuiFab-primary": {
-              "&:hover": { backgroundColor: "rgb(79 70 229)" },
+              // "&:hover": { backgroundColor: "rgb(79 70 229)" },
             },
             "& .MuiSpeedDialIcon-icon": { fontSize: 30 },
             // "&:hover": { backgroundColor: "yellow" },

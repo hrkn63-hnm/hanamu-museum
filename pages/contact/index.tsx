@@ -26,22 +26,22 @@ function index() {
         <div className="max-w-lg place-items-center justify-items-center gap-4  mx-auto">
           <div>
             <Link href="https://twitter.com/hrkn63_hnm" passHref>
-              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
                 Twitter
               </div>
             </Link>
             <Link href="https://github.com/hrkn63-hnm" passHref>
-              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
                 GitHub
               </div>
             </Link>
             <Link href="https://zenn.dev/hariken" passHref>
-              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
                 Zenn
               </div>
             </Link>
             <Link href={""} passHref>
-              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
+              <div className="text-indigo-50 p-3 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
                 Gmail
               </div>
             </Link>

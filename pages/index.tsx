@@ -33,8 +33,8 @@ export default function Home({ blog }: Props): JSX.Element {
       <div className="grid justify-items-center gap-3">
         <MyCard
           img="https://media.discordapp.net/attachments/757627473427955867/1030661015744040960/IMG_8422.jpg?width=775&height=1045"
-          title="はなむ"
-          text="よく食べよく寝る高校生"
+          title="はなむ++"
+          text="Next.jsとFirebaseで世界を救う高校生"
         />
       </div>
       <div className="sticky bottom-0">

@@ -19,14 +19,6 @@ type Props = {
   blog: Array<Blog>;
 };
 
-export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blog" });
-  return {
-    props: {
-      blog: data.contents,
-    },
-  };
-};
 
 export default function Home({ blog }: Props): JSX.Element {
   return (
@@ -34,7 +26,6 @@ export default function Home({ blog }: Props): JSX.Element {
       <Head>
         <title>Hanamu++ Museum/Blog</title>
       </Head>
-      {/* <Header /> */}
       <div className=" ">
         <h1 className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Blog
@@ -44,16 +35,11 @@ export default function Home({ blog }: Props): JSX.Element {
           {blog?.map((blog) => (
             <div key={blog.id}>
               <Link href={`/blog/${blog.id}`} passHref>
-                <div className="text-indigo-50 p-6 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out my-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer hover:origin-bottom hover:-rotate-3 hover:scale-125">
-                  {/* <Stack spacing={{ xs: 1, sm: 2, md: 4 }}>
-                <Item> */}
+                <div className="text-indigo-50 p-6 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out mt-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
                   {blog.title}
-
-                  <div className="">
+                  {/* <div className="">
                     {blog.tag && <span className="">#{blog.tag}</span>}
-                  </div>
-                  {/* </Item>
-              </Stack> */}
+                  </div> */}
                 </div>
               </Link>
             </div>
@@ -67,4 +53,12 @@ export default function Home({ blog }: Props): JSX.Element {
   );
 }
 
-//
+
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "blog" });
+  return {
+    props: {
+      blog: data.contents,
+    },
+  };
+};
