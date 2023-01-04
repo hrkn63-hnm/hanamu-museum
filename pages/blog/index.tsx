@@ -56,6 +56,7 @@ export default function Home({ blog }: Props): JSX.Element {
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });
+  // console.log(data)
   return {
     props: {
       blog: data.contents,
