@@ -36,7 +36,7 @@ export default function Home({ blog }: Props): JSX.Element {
         <title>Hanamu++ Museum/Blog</title>
       </Head>
       {/* <Header /> */}
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 min-h-screen w-screen text-center bg-cover bg-center">
+      <div className="">
         <h1 className="text-white text-7xl tracking-widest py-12 p-1 place-items-start">
           Blog
         </h1>

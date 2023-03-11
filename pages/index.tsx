@@ -20,27 +20,27 @@ export const getStaticProps = async () => {
 export default function Home({ blog }: Props): JSX.Element {
   return (
     <>
-    <Head>
-      <title>Hanamu++ Museum</title>
-    </Head>
-    <div className="">
-      <p className="text-white text-4xl tracking-widest pt-12 pb-3 p-1 place-items-center">
-        Welcome to
-      </p>
-      <p className="text-white text-4xl tracking-widest pt-3 pb-12 p-1 place-items-center">
-        Hanamu++ Museum!
-      </p>
-      <div className="grid justify-items-center gap-3">
-        <MyCard
-          img="https://media.discordapp.net/attachments/757627473427955867/1030661015744040960/IMG_8422.jpg?width=775&height=1045"
-          title="はなむ++"
-          text="Next.jsとFirebaseで世界を救う高校生"
-        />
+      <Head>
+        <title>Hanamu++ Museum</title>
+      </Head>
+      <div className="">
+        <p className="text-white text-4xl tracking-widest pt-12 pb-3 p-1 place-items-center">
+          Welcome to
+        </p>
+        <p className="text-white text-4xl tracking-widest pt-3 pb-12 p-1 place-items-center">
+          Hanamu++ Museum!
+        </p>
+        <div className="grid justify-items-center gap-3">
+          <MyCard
+            img="https://media.discordapp.net/attachments/757627473427955867/1030661015744040960/IMG_8422.jpg?width=775&height=1045"
+            title="はなむ++"
+            text={"情報科学と創作に興味がある受験生。面白そうなことなら南極探検でもパンケーキ食べ歩きでもなんでもやります。誘ってください。"}
+          />
+        </div>
+        <div className="sticky bottom-0">
+          <Menu />
+        </div>
       </div>
-      <div className="sticky bottom-0">
-        <Menu />
-      </div>
-    </div>
     </>
   );
 }
