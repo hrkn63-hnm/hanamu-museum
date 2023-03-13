@@ -9,6 +9,8 @@ import WorkIcon from "@mui/icons-material/Work";
 import BookIcon from "@mui/icons-material/Book";
 import { Home } from "@mui/icons-material";
 import router, { Router } from "next/router";
+import { deepPurple } from "@mui/material/colors";
+
 
 const actions = [
   { icon: <TextsmsIcon />, name: "Contact", link: "contact" },
@@ -42,7 +44,7 @@ export default function BasicSpeedDial() {
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}
-              sx={{ width: 50, height: 50, backgroundColor: "lightblue" }}
+              sx={{ width: 50, height: 50, backgroundColor: deepPurple[50] }}
               onClick={() => router.push("/" + action.link)}
             />
           ))}

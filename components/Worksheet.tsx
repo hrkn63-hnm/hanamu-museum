@@ -44,20 +44,24 @@ function worksheet(props: {
           </CardContent>
           {/* <div className="flex justify-center"> */}
           <CardActions>
-            <Button
-              size="small"
-              href={props.linkRep}
-              className="text-indigo-500 hover:text-indigo-800 hover:bg-indigo-100/50"
-            >
-              リポジトリ
-            </Button>
-            <Button
-              size="small"
-              href={props.linkDem}
-              className="text-indigo-500 hover:text-indigo-800 hover:bg-indigo-100/50"
-            >
-              デモ
-            </Button>
+            {props.linkRep && (
+              <Button
+                size="small"
+                href={props.linkRep}
+                className="text-indigo-500 hover:text-indigo-800 hover:bg-indigo-100/50"
+              >
+                リポジトリ
+              </Button>
+            )}
+            {props.linkDem && (
+              <Button
+                size="small"
+                href={props.linkDem}
+                className="text-indigo-500 hover:text-indigo-800 hover:bg-indigo-100/50"
+              >
+                デモ
+              </Button>
+            )}
           </CardActions>
           {/* </div> */}
         </Card>

@@ -19,7 +19,6 @@ type Props = {
   blog: Array<Blog>;
 };
 
-
 export default function Home({ blog }: Props): JSX.Element {
   return (
     <>
@@ -35,8 +34,13 @@ export default function Home({ blog }: Props): JSX.Element {
           {blog?.map((blog) => (
             <div key={blog.id}>
               <Link href={`/blog/${blog.id}`} passHref>
-                <div className="text-indigo-50 p-6 rounded bg-indigo-500 transition delay-150 duration-300 ease-in-out mt-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer sm:hover:origin-bottom sm:hover:-rotate-3 sm:hover:scale-125">
+                <div className="text-left  text-xl text-indigo-50 p-6 rounded bg-indigo-500  mt-6 mx-6 shadow-lg shadow-indigo-500/40 cursor-pointer ">
                   {blog.title}
+                  <br />
+                  <div className="text-right text-md">
+                    {new Date(blog.updatedAt).toLocaleDateString()}
+                  </div>
+
                   {/* <div className="">
                     {blog.tag && <span className="">#{blog.tag}</span>}
                   </div> */}
@@ -52,7 +56,6 @@ export default function Home({ blog }: Props): JSX.Element {
     </>
   );
 }
-
 
 export const getStaticProps = async () => {
   const data = await client.get({ endpoint: "blog" });

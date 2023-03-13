@@ -1,7 +1,15 @@
 {
   "elements": [
     {
-      "id":0,
+      "id": 0,
+      "img": "https://media.discordapp.net/attachments/757627473427955867/1084832830028251267/2023-03-13_22.35.31.png",
+      "title": "画像認識AI",
+      "text": "「ぐー」「ちょき」「ぱー」のいずれかを判定してくれる。「人気ブロガーからあげ先生のとにかく楽しいAI自作教室」を読みながら実装した。",
+      "linkRep": "",
+      "linkDem": ""
+    },
+    {
+      "id": 0,
       "img": "https://media.discordapp.net/attachments/757627473427955867/1084086030333919272/2023-03-06_3.30.54.png",
       "title": "Tone",
       "text": "自分の通う学校のためのSNS。時間割や各委員会の活動報告が閲覧できる。Toneコインで景品と交換できたり多機能。僕の青春の犠牲の上に開発された血と汗と涙の結晶。Next.js/TypeScript/Firebaseなどを使用した。",
