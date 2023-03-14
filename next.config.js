@@ -6,7 +6,7 @@ const nextConfig = {
     optimizeFonts: true,
   },
   images: {
-    domains: ["images.unsplash.com",],
+    domains: ["images.unsplash.com", "images.microcms-assets.io"],
   },
 };
 

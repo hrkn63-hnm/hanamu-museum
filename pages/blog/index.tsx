@@ -38,7 +38,7 @@ export default function Home({ blog }: Props): JSX.Element {
                   {blog.title}
                   <br />
                   <div className="text-right text-md">
-                    {new Date(blog.updatedAt).toLocaleDateString()}
+                    {new Date(blog.publishedAt).toLocaleDateString()}
                   </div>
 
                   {/* <div className="">
